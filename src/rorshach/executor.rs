@@ -4,9 +4,9 @@ use crate::rorshach::rule_parser::RuleParser;
 use crate::rorshach::producer::Producer;
 use crate::rorshach::consumer::Consumer;
 use hotwatch::Event as FileEvent;
-extern crate log;
+use log;
 use log::info;
-extern crate pub_sub;
+use pub_sub;
 use futures::{ join, executor::block_on};
 
 pub struct Executor {

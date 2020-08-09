@@ -1,13 +1,13 @@
-#[macro_use] extern crate clap;
-#[macro_use] extern crate strum_macros;
-extern crate csv;
-extern crate shellexpand;
+// #[macro_use] extern crate clap;
+use clap;
+use clap::*;
+use shellexpand;
 use clap::{App};
 use std::time::Duration;
 use hotwatch::blocking::{Flow, Hotwatch};
 
-extern crate log;
-extern crate simple_logger;
+use log;
+use simple_logger;
 use log::error;
 
 mod rorshach;
